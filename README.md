@@ -1,6 +1,6 @@
-# BookNest
+# BookPro
 
-BookNest is a web application designed for book enthusiasts to discover, share, and discuss their favorite books with others. Whether you're an avid reader looking for your next literary adventure or someone who loves recommending books to friends, BookNest provides a platform to connect with like-minded individuals and explore a diverse range of reading recommendations.
+BookPro is a web application designed for book enthusiasts to discover, share, and discuss their favorite books with others. Whether you're an avid reader looking for your next literary adventure or someone who loves recommending books to friends, BookPro provides a platform to connect with like-minded individuals and explore a diverse range of reading recommendations.
 
 ## Features
 
@@ -16,12 +16,12 @@ BookNest is a web application designed for book enthusiasts to discover, share, 
 
 ## Getting Started
 
-To get started with BookNest, follow these steps:
+To get started with BookPro, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Install the required dependencies specified in the `requirements.txt` file.
 3. Set up your database and run migrations using Django's management commands.
-4. Start the development server and access BookNest through your web browser.
+4. Start the development server and access BookPro through your web browser.
 5. Register for an account or log in with existing credentials to begin exploring and recommending books.
 
 ## Technologies Used
@@ -35,7 +35,7 @@ To get started with BookNest, follow these steps:
 
 ## Contributing
 
-Contributions to BookNest are welcome! Whether you want to report a bug, suggest a feature, or contribute code improvements, please feel free to submit a pull request or open an issue on GitHub.
+Contributions to BookPro are welcome! Whether you want to report a bug, suggest a feature, or contribute code improvements, please feel free to submit a pull request or open an issue on GitHub.
 
 ## License
 
