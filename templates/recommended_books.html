@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommended Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: right;
+        }
+        .header a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .container {
+            margin: 20px;
+        }
+        .recommendations ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .recommendations ul li {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .recommendations ul li img {
+            max-width: 150px;
+            max-height: 150px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .filters {
+            margin-bottom: 20px;
+        }
+        .filters select,
+        .filters input {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .comments {
+            margin-top: 20px;
+        }
+        .comments ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .comments ul li {
+            padding: 5px 0;
+        }
+        .comments form {
+            margin-top: 20px;
+        }
+        .comments textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        .comments input[type="submit"],
+        .like-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .comment-count {
+            margin-bottom: 10px;
+        }
+        .recommend-button {
+            background-color: #000000; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .recommend-button:hover {
+            background-color: #333333; 
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p>Welcome, <strong>{{ user.first_name }} {{ user.last_name }}</strong></p>
+        <a href="{% url 'book_recommendation' %}">Home</a>
+        <a href="{% url 'view_recommendations' %}">My Recommendations</a>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+    <div class="container">
+        <h2>Recommended Books</h2>
+        <a href="{% url 'recommend_book_form' %}" class="recommend-button">Recommend a book</a>
+        <div class="filters">
+            <form id="filter-form" method="get">
+                <select name="category" id="category-filter">
+                    <option value="">All Genres</option>
+                    {% for genre in genres %}
+                    <option value="{{ genre }}" {% if request.GET.category == genre %}selected{% endif %}>{{ genre }}</option>
+                    {% endfor %}
+                </select>
+
+                <select name="sort_by" id="sort-by">
+                    <option value="rating" {% if request.GET.sort_by == "rating" %}selected{% endif %}>Rating</option>
+                    <option value="publication_date" {% if request.GET.sort_by == "publication_date" %}selected{% endif %}>Publication Date</option>
+                </select>
+
+                <input type="submit" value="Apply">
+            </form>
+        </div>
+        <p>Total Recommendations: {{ recommendation_count }}</p>
+        <div class="recommendations">
+            <ul>
+                {% for recommendation in recommendations %}
+                <li>
+                    <strong>Title:</strong> {{ recommendation.book_title }}<br>
+                    <strong>Authors:</strong> {{ recommendation.author }}<br>
+                    <strong>Book Link:</strong> {{ recommendation.link }}<br>
+                    <strong>Description:</strong> {{ recommendation.book_description|default:"N/A" }}<br>
+                    <img src="{{ recommendation.cover_image|default:'https://via.placeholder.com/150' }}" alt="Cover Image"><br>
+                    <strong>Rating:</strong> {{ recommendation.rating|default:"N/A" }}<br>
+                    <strong>Category:</strong> {{ recommendation.category|default:"N/A" }}<br>
+                    <strong>Publication Date:</strong> {{ recommendation.publication_date|default:"N/A" }}<br>
+                    <strong>Recommended by:</strong> {{ recommendation.user.first_name }} {{ recommendation.user.last_name }}<br>
+                    <div class="likes">
+                        <span>Likes: {{ recommendation.likes }}</span>
+                        <button class="like-button" data-recommendation-id="{{ recommendation.id }}">Like</button>
+                    </div>
+                    <div class="comments">
+                        <h3 class="comment-count">Comments ({{ recommendation.comment_set.count }})</h3>
+                        <ul>
+                            {% for comment in recommendation.comment_set.all %}
+                                <li>{{ comment.text }} - {{ comment.user.first_name }} {{ comment.user.last_name }}</li>
+                            {% empty %}
+                                <li>No comments yet.</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <form method="post" action="{% url 'add_comment' recommendation.id %}">
+                        {% csrf_token %}
+                        <textarea name="text" placeholder="Add a comment"></textarea><br>
+                        <input type="submit" value="Add Comment">
+                    </form>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.like-button').click(function() {
+                var recommendationId = $(this).data('recommendation-id');
+                $.ajax({
+                    url: '/like_recommendation/',
+                    type: 'POST',
+                    data: {
+                        'recommendation_id': recommendationId,
+                        'csrfmiddlewaretoken': '{{ csrf_token }}'
+                    },
+                    success: function(response) {
+                        $('.like-button[data-recommendation-id="' + recommendationId + '"]').siblings('span').text('Likes: ' + response.likes);
+                    },
+                    error: function(xhr, status, error) {
+                        console.log("Error:", error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

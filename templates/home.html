@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Recommendation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: right;
+        }
+        .header a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .search-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .search-box {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+        .search-results {
+            margin-top: 20px;
+        }
+        .search-results ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .search-results ul li {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .search-results ul li img {
+            max-width: 150px;
+            max-height: 150px;
+        }
+        #success-message {
+            display: none;
+            color: green;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p>Welcome, <strong>{{ user.first_name }} {{ user.last_name }}</strong></p>
+        <a href="{% url 'view_recommendations' %}">My Recommendations</a>
+        <a href="{% url 'recommended_books' %}">Recommended Books</a>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+    <div class="search-container">
+        <h2>Book Recommendation</h2>
+        <form id="search-form">
+            <input type="text" id="search-input" class="search-box" placeholder="Search for a book...">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    <div class="search-results">
+        <h3>Search Results</h3>
+        <ul id="book-list">
+            {% for book in search_results %}
+            <li>
+                <strong>Title:</strong> {{ book.title }}<br>
+                <strong>Authors:</strong> {{ book.authors|join:", " }}<br>
+                <strong>Category:</strong> {{ book.category|join:", " }}<br>
+                <strong>Description:</strong> {{ book.description|default:"N/A" }}<br>
+                <strong>Cover Image:</strong> <img src="{{ book.cover_image|default:'https://via.placeholder.com/150' }}" alt="Cover Image"><br>
+                <strong>Ratings Count:</strong> {{ book.ratings_count|default:"N/A" }}<br>
+                <strong>Average Rating:</strong> {{ book.average_rating|default:"N/A" }}<br>
+                <strong>Publication Date:</strong> {{ book.publication_date|default:"N/A" }}<br>
+                <strong>Link:</strong> {{ book.link|default:"N/A" }}<br>
+                <button class="add-to-recommendation" 
+                        data-title="{{ book.title }}" 
+                        data-description="{{ book.description }}" 
+                        data-author="{{ book.authors|join:", " }}" 
+                        data-cover="{{ book.cover_image }}" 
+                        data-rating="{{ book.average_rating }}" 
+                        data-category="{{ book.category|join:", " }}" 
+                        data-publication-date="{{ book.publication_date }}"
+                        data-link="{{ book.link }}">
+                    Add to Recommendations
+                </button>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div id="success-message"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#search-form').submit(function(event) {
+                event.preventDefault();
+                var query = $('#search-input').val();
+                $.ajax({
+                    url: '/search/?q=' + query,
+                    type: 'GET',
+                    success: function(response) {
+                        $('#book-list').empty();
+                        if (response.error) {
+                            $('#book-list').append('<li>' + response.error + '</li>');
+                        } else {
+                            response.forEach(function(book) {
+                                var bookHtml = '<li>';
+                                bookHtml += '<strong>Title:</strong> ' + book.title + '<br>';
+                                bookHtml += '<strong>Authors:</strong> ' + (book.authors ? book.authors.join(', ') : 'N/A') + '<br>';
+                                bookHtml += '<strong>Category:</strong> ' + (book.category ? book.category.join(', ') : 'N/A') + '<br>';
+                                bookHtml += '<strong>Link:</strong> ' + (book.link ? '<a href="' + book.link + '" target="_blank">View Book</a>' : 'N/A') + '<br>';
+                                bookHtml += '<strong>Description:</strong> ' + (book.description ? book.description : 'N/A') + '<br>';
+                                bookHtml += '<strong>Cover Image:</strong> <img src="' + (book.cover_image ? book.cover_image : 'https://via.placeholder.com/150') + '" alt="Cover Image"><br>';
+                                bookHtml += '<strong>Ratings Count:</strong> ' + (book.ratings_count ? book.ratings_count : 'N/A') + '<br>';
+                                bookHtml += '<strong>Average Rating:</strong> ' + (book.average_rating ? book.average_rating : 'N/A') + '<br>';
+                                bookHtml += '<strong>Publication Date:</strong> ' + (book.publication_date ? book.publication_date : 'N/A') + '<br>';
+                                bookHtml += '<button class="add-to-recommendation" data-title="' + book.title + '" data-description="' + (book.description ? book.description : '') + '" data-author="' + (book.authors ? book.authors.join(', ') : '') + '" data-cover="' + (book.cover_image ? book.cover_image : '') + '" data-rating="' + (book.average_rating ? book.average_rating : '') + '" data-category="' + (book.category ? book.category.join(', ') : '') + '" data-publication-date="' + (book.publication_date ? book.publication_date : '') + '" data-link="' + (book.link ? book.link : '') + '">Add to Recommendations</button>';
+                                bookHtml += '</li>';
+                                $('#book-list').append(bookHtml);
+                            });
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        $('#book-list').append('<li>An error occurred while searching for books.</li>');
+                    }
+                });
+            });
+
+            $(document).on('click', '.add-to-recommendation', function() {
+                var bookTitle = $(this).data('title');
+                var bookDescription = $(this).data('description');
+                var bookAuthor = $(this).data('author');
+                var bookCover = $(this).data('cover');
+                var bookRating = $(this).data('rating');
+                var bookCategory = $(this).data('category'); 
+                var bookPublicationDate = $(this).data('publication-date');
+                var bookLink = $(this).data('link');
+
+                $.ajax({
+                    url: '/add-to-recommendations/',
+                    type: 'POST',
+                    data: {
+                        'book_title': bookTitle,
+                        'book_description': bookDescription,
+                        'author': bookAuthor,
+                        'cover_image': bookCover,
+                        'rating': bookRating,
+                        'category': bookCategory, 
+                        'publication_date': bookPublicationDate,
+                        'link': bookLink,
+                        'csrfmiddlewaretoken': '{{ csrf_token }}'
+                    },
+                    success: function(response) {
+                        $('#success-message').text(response.message).show().fadeOut(5000);
+                    },
+                    error: function(xhr, status, error) {
+                        console.log("Error:", error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

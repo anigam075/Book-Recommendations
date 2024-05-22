@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: right;
+        }
+        .header a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .container {
+            margin: 20px;
+        }
+        .recommendations ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .recommendations ul li {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .recommendations ul li img {
+            max-width: 150px;
+            max-height: 150px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p>Welcome, <strong>{{ user.first_name }} {{ user.last_name }}</strong></p>
+        <a href="{% url 'book_recommendation' %}">Home</a>
+        <a href="{% url 'recommended_books' %}">Recommended Books</a>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+    <div class="container">
+        <h2>My Recommendations</h2>
+        <div class="recommendations">
+            <ul>
+                {% for recommendation in recommendations %}
+                <li>
+                    <strong>Title:</strong> {{ recommendation.book_title }}<br>
+                    <strong>Authors:</strong> {{ recommendation.author }}<br>
+                    <strong>Book Link:</strong> {{ recommendation.link|default:"N/A" }}<br>
+                    <strong>Description:</strong> {{ recommendation.book_description|default:"N/A" }}<br>
+                    <img src="{{ recommendation.cover_image|default:'https://via.placeholder.com/150' }}" alt="Cover Image"><br>
+                    <strong>Category:</strong> {{ recommendation.category|default:"N/A" }}<br>
+                    <strong>Publication Date:</strong> {{ recommendation.publication_date|default:"N/A" }}<br> 
+                    <strong>Rating:</strong> {{ recommendation.rating|default:"N/A" }}<br>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

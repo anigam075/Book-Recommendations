@@ -1,0 +1,845 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 1545,
+    "items": [
+        {
+            "kind": "books#volume",
+            "id": "AS1QzQEACAAJ",
+            "etag": "e7CE1v5GQs0",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/AS1QzQEACAAJ",
+            "volumeInfo": {
+                "title": "Effective Python",
+                "subtitle": "59 Specific Ways to Write Better Python",
+                "authors": [
+                    "Brett Slatkin"
+                ],
+                "publishedDate": "2020",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0134854578"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780134854571"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=AS1QzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=AS1QzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=AS1QzQEACAAJ&dq=python&hl=&cd=1&source=gbs_api",
+                "infoLink": "http://books.google.co.in/books?id=AS1QzQEACAAJ&dq=python&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Effective_Python.html?hl=&id=AS1QzQEACAAJ"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=AS1QzQEACAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "ATgzEAAAQBAJ",
+            "etag": "htluciBXWjc",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/ATgzEAAAQBAJ",
+            "volumeInfo": {
+                "title": "Classic Computer Science Problems in Java",
+                "authors": [
+                    "David Kopec"
+                ],
+                "publisher": "Simon and Schuster",
+                "publishedDate": "2020-12-21",
+                "description": "Sharpen your coding skills by exploring established computer science problems! Classic Computer Science Problems in Java challenges you with time-tested scenarios and algorithms. Summary Sharpen your coding skills by exploring established computer science problems! Classic Computer Science Problems in Java challenges you with time-tested scenarios and algorithms. You\u2019ll work through a series of exercises based in computer science fundamentals that are designed to improve your software development abilities, improve your understanding of artificial intelligence, and even prepare you to ace an interview. As you work through examples in search, clustering, graphs, and more, you'll remember important things you've forgotten and discover classic solutions to your \"new\" problems! Purchase of the print book includes a free eBook in PDF, Kindle, and ePub formats from Manning Publications. About the technology Whatever software development problem you\u2019re facing, odds are someone has already uncovered a solution. This book collects the most useful solutions devised, guiding you through a variety of challenges and tried-and-true problem-solving techniques. The principles and algorithms presented here are guaranteed to save you countless hours in project after project. About the book Classic Computer Science Problems in Java is a master class in computer programming designed around 55 exercises that have been used in computer science classrooms for years. You\u2019ll work through hands-on examples as you explore core algorithms, constraint problems, AI applications, and much more. What's inside Recursion, memoization, and bit manipulation Search, graph, and genetic algorithms Constraint-satisfaction problems K-means clustering, neural networks, and adversarial search About the reader For intermediate Java programmers. About the author David Kopec is an assistant professor of Computer Science and Innovation at Champlain College in Burlington, Vermont. Table of Contents 1 Small problems 2 Search problems 3 Constraint-satisfaction problems 4 Graph problems 5 Genetic algorithms 6 K-means clustering 7 Fairly simple neural networks 8 Adversarial search 9 Miscellaneous problems 10 Interview with Brian Goetz",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781638356547"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1638356548"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": false
+                },
+                "pageCount": 262,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.1.1.0.preview.2",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=ATgzEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=ATgzEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=ATgzEAAAQBAJ&printsec=frontcover&dq=python&hl=&cd=2&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=ATgzEAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=ATgzEAAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 2489.8,
+                    "currencyCode": "INR"
+                },
+                "retailPrice": {
+                    "amount": 2489.8,
+                    "currencyCode": "INR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=ATgzEAAAQBAJ&rdid=book-ATgzEAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 2489800000,
+                            "currencyCode": "INR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 2489800000,
+                            "currencyCode": "INR"
+                        }
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.co.in/books/download/Classic_Computer_Science_Problems_in_Jav-sample-epub.acsm?id=ATgzEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=ATgzEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "This book collects the most useful solutions devised, guiding you through a variety of challenges and tried-and-true problem-solving techniques."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "igYvDwAAQBAJ",
+            "etag": "n/DqyjP1iOE",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/igYvDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Python Crash Course",
+                "subtitle": "A Hands-On, Project-Based Introduction to Programming",
+                "authors": [
+                    "Eric Matthes"
+                ],
+                "publisher": "No Starch Press",
+                "publishedDate": "2015-11-01",
+                "description": "Python Crash Course is a fast-paced, thorough introduction to Python that will have you writing programs, solving problems, and making things that work in no time. In the first half of the book, you\u2019ll learn about basic programming concepts, such as lists, dictionaries, classes, and loops, and practice writing clean and readable code with exercises for each topic. You\u2019ll also learn how to make your programs interactive and how to test your code safely before adding it to a project. In the second half of the book, you\u2019ll put your new knowledge into practice with three substantial projects: a Space Invaders\u2013inspired arcade game, data visualizations with Python\u2019s super-handy libraries, and a simple web app you can deploy online. As you work through Python Crash Course you\u2019ll learn how to: \u2013Use powerful Python libraries and tools, including matplotlib, NumPy, and Pygal \u2013Make 2D games that respond to keypresses and mouse clicks, and that grow more difficult as the game progresses \u2013Work with data to generate interactive visualizations \u2013Create and customize Web apps and deploy them safely online \u2013Deal with mistakes and errors so you can solve your own programming problems If you\u2019ve been thinking seriously about digging into programming, Python Crash Course will get you up to speed and have you writing real programs fast. Why wait any longer? Start your engines and code! Uses Python 2 and 3",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781593277390"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1593277393"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": false
+                },
+                "pageCount": 564,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "averageRating": 5,
+                "ratingsCount": 1,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "0.0.1.0.preview.2",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=igYvDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=igYvDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=igYvDwAAQBAJ&printsec=frontcover&dq=python&hl=&cd=3&source=gbs_api",
+                "infoLink": "http://books.google.co.in/books?id=igYvDwAAQBAJ&dq=python&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Python_Crash_Course.html?hl=&id=igYvDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=igYvDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "In the first half of the book, you\u2019ll learn about basic programming concepts, such as lists, dictionaries, classes, and loops, and practice writing clean and readable code with exercises for each topic."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "H9emM_LGFDEC",
+            "etag": "7OvM1KQsr2I",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/H9emM_LGFDEC",
+            "volumeInfo": {
+                "title": "Programming in Python 3",
+                "subtitle": "A Complete Introduction to the Python Language",
+                "authors": [
+                    "Mark Summerfield"
+                ],
+                "publisher": "Addison-Wesley Professional",
+                "publishedDate": "2010",
+                "description": "Now fully updated, this edition brings together all the knowledge needed to write programs, use any library, and even create new library modules. The book teaches every aspect of the Python 3 language and covers all the built-in functionality.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780321680563"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0321680561"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 648,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "averageRating": 5,
+                "ratingsCount": 1,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.1.1.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=H9emM_LGFDEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=H9emM_LGFDEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=H9emM_LGFDEC&printsec=frontcover&dq=python&hl=&cd=4&source=gbs_api",
+                "infoLink": "http://books.google.co.in/books?id=H9emM_LGFDEC&dq=python&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Programming_in_Python_3.html?hl=&id=H9emM_LGFDEC"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=H9emM_LGFDEC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Now fully updated, this edition brings together all the knowledge needed to write programs, use any library, and even create new library modules."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "XAIHEAAAQBAJ",
+            "etag": "S98AbglPqBs",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/XAIHEAAAQBAJ",
+            "volumeInfo": {
+                "title": "Learning Scientific Programming with Python",
+                "authors": [
+                    "Christian Hill"
+                ],
+                "publisher": "Cambridge University Press",
+                "publishedDate": "2020-11-12",
+                "description": "Learn to master basic programming tasks from scratch with real-life, scientifically relevant examples and solutions drawn from both science and engineering. Students and researchers at all levels are increasingly turning to the powerful Python programming language as an alternative to commercial packages and this fast-paced introduction moves from the basics to advanced concepts in one complete volume, enabling readers to gain proficiency quickly. Beginning with general programming concepts such as loops and functions within the core Python 3 language, and moving on to the NumPy, SciPy and Matplotlib libraries for numerical programming and data visualization, this textbook also discusses the use of Jupyter Notebooks to build rich-media, shareable documents for scientific analysis. The second edition features a new chapter on data analysis with the pandas library and comprehensive updates, and new exercises and examples. A final chapter introduces more advanced topics such as floating-point precision and algorithm stability, and extensive online resources support further study. This textbook represents a targeted package for students requiring a solid foundation in Python programming.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781108787468"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1108787460"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 572,
+                "printType": "BOOK",
+                "categories": [
+                    "Science"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=XAIHEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=XAIHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=XAIHEAAAQBAJ&dq=python&hl=&cd=5&source=gbs_api",
+                "infoLink": "http://books.google.co.in/books?id=XAIHEAAAQBAJ&dq=python&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Learning_Scientific_Programming_with_Pyt.html?hl=&id=XAIHEAAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=XAIHEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "The second edition features a new chapter on data analysis with the pandas library and comprehensive updates, and new exercises and examples."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "6HgFEAAAQBAJ",
+            "etag": "7st8XX6nayY",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/6HgFEAAAQBAJ",
+            "volumeInfo": {
+                "title": "Taming PYTHON By Programming",
+                "authors": [
+                    "Jeeva Jose"
+                ],
+                "publisher": "KHANNA PUBLISHING HOUSE",
+                "description": "This is a great book for Python Beginner and Advanced Learner which covers Basics to Advanced Python Programming where each topic is explained with the help of Illustrations and Examples. More than 450 solved programs of this book are tested in Python 3.4.3 for windows. The range of Python Topics covered makes this book unique which can be used as a self study material or for instructor assisted teaching. This books covers Python Syllabus of all major national and international universities. Also it includes frequently asked questions for interviews and examination which are provided at the end of each chapter.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9789386173348"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "9386173344"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 346,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=6HgFEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=6HgFEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=6HgFEAAAQBAJ&printsec=frontcover&dq=python&hl=&cd=6&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=6HgFEAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=6HgFEAAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 395.3,
+                    "currencyCode": "INR"
+                },
+                "retailPrice": {
+                    "amount": 276.71,
+                    "currencyCode": "INR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=6HgFEAAAQBAJ&rdid=book-6HgFEAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 395300000,
+                            "currencyCode": "INR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 276710000,
+                            "currencyCode": "INR"
+                        }
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=6HgFEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "The range of Python Topics covered makes this book unique which can be used as a self study material or for instructor assisted teaching. This books covers Python Syllabus of all major national and international universities."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "v1jvDwAAQBAJ",
+            "etag": "VEMUlpUoGy8",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/v1jvDwAAQBAJ",
+            "volumeInfo": {
+                "title": "LEARN PYTHON WITH 200 PROGRAMS",
+                "subtitle": "PRACTICAL GUIDE FOR CBSE XI,XII & BEGINEERS",
+                "authors": [
+                    "VAISHALI B BHAGAT"
+                ],
+                "publisher": "Notion Press ",
+                "publishedDate": "2020-07-02",
+                "description": "The main aim of this book is to provide easiest approach to understand and develop programming skills.This book is for the novice,students having programming background,teachers and professionals.This book contains 240 and more practical examples.The sample programs are meant to be both simple and educational.Whenever necessary,pictorial practical implementation of source code are included to improve clarity and facilitate better understanding.Code with comments are given in the book to elaborate how various lines of code work.The three programming projects in book will give insight on how to integrate the various features of Python programming in real life problems.All programs in this book were written and tested successfully while running Python version 3.3. Version 3.4.This book aims to help you learn this wonderful language and show how to get things done quickly and painlessly.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781649510747"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1649510748"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 374,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "averageRating": 5,
+                "ratingsCount": 1,
+                "maturityRating": "MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.4.1.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=v1jvDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=v1jvDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=v1jvDwAAQBAJ&printsec=frontcover&dq=python&hl=&cd=7&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=v1jvDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=v1jvDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 944,
+                    "currencyCode": "INR"
+                },
+                "retailPrice": {
+                    "amount": 472,
+                    "currencyCode": "INR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=v1jvDwAAQBAJ&rdid=book-v1jvDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 944000000,
+                            "currencyCode": "INR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 472000000,
+                            "currencyCode": "INR"
+                        }
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.co.in/books/download/LEARN_PYTHON_WITH_200_PROGRAMS-sample-pdf.acsm?id=v1jvDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=v1jvDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "The main aim of this book is to provide easiest approach to understand and develop programming skills.This book is for the novice,students having programming background,teachers and professionals.This book contains 240 and more practical ..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "mh0bU6NXrBgC",
+            "etag": "epFaCR/eSG8",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/mh0bU6NXrBgC",
+            "volumeInfo": {
+                "title": "Core Python Programming",
+                "authors": [
+                    "Wesley Chun"
+                ],
+                "publisher": "Prentice Hall Professional",
+                "publishedDate": "2001",
+                "description": "Experts and novices alike will be able to find information about every command they'll need to use Linux. This complete, practical desk reference is organized by function, with a road map-style alphabetical reference for quick access of information about all aspects of running and administering the program. The CD-ROM contains Windows and Linux Python distributions plus extensive cross-platform source code from the book.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780130260369"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0130260363"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 805,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "averageRating": 3.5,
+                "ratingsCount": 12,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.3.2.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=mh0bU6NXrBgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=mh0bU6NXrBgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=mh0bU6NXrBgC&printsec=frontcover&dq=python&hl=&cd=8&source=gbs_api",
+                "infoLink": "http://books.google.co.in/books?id=mh0bU6NXrBgC&dq=python&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Core_Python_Programming.html?hl=&id=mh0bU6NXrBgC"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=mh0bU6NXrBgC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "The CD-ROM contains Windows and Linux Python distributions plus extensive cross-platform source code from the book."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "ftA0yk1Z92wC",
+            "etag": "wUiPfOKtiwg",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/ftA0yk1Z92wC",
+            "volumeInfo": {
+                "title": "Learning Python",
+                "authors": [
+                    "Mark Lutz",
+                    "David Ascher"
+                ],
+                "publisher": "\"O'Reilly Media, Inc.\"",
+                "publishedDate": "2003-12-23",
+                "description": "Portable, powerful, and a breeze to use, Python is the popular open source object-oriented programming language used for both standalone programs and scripting applications. Python is considered easy to learn, but there's no quicker way to mastery of the language than learning from an expert teacher. This edition of Learning Python puts you in the hands of two expert teachers, Mark Lutz and David Ascher, whose friendly, well-structured prose has guided many a programmer to proficiency with the language. Learning Python, Second Edition, offers programmers a comprehensive learning tool for Python and object-oriented programming. Thoroughly updated for the numerous language and class presentation changes that have taken place since the release of the first edition in 1999, this guide introduces the basic elements of the latest release of Python 2.3 and covers new features, such as list comprehensions, nested scopes, and iterators/generators. Beyond language features, this edition of Learning Python also includes new context for less-experienced programmers, including fresh overviews of object-oriented programming and dynamic typing, new discussions of program launch and configuration options, new coverage of documentation sources, and more. There are also new use cases throughout to make the application of language features more concrete. The first part of Learning Python gives programmers all the information they'll need to understand and construct programs in the Python language, including types, operators, statements, classes, functions, modules and exceptions. The authors then present more advanced material, showing how Python performs common tasks by offering real applications and the libraries available for those applications. Each chapter ends with a series of exercises that will test your Python skills and measure your understanding. Learning Python, Second Edition is a self-paced book that allows readers to focus on the core Python language in depth. As you work through the book, you'll gain a deep and complete understanding of the Python language that will help you to understand the larger application-level examples that you'll encounter on your own. If you're interested in learning Python--and want to do so quickly and efficiently--then Learning Python, Second Edition is your best choice.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780596551933"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0596551932"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 623,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 16,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "0.6.5.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=ftA0yk1Z92wC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=ftA0yk1Z92wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=ftA0yk1Z92wC&printsec=frontcover&dq=python&hl=&cd=9&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=ftA0yk1Z92wC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=ftA0yk1Z92wC"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 2065,
+                    "currencyCode": "INR"
+                },
+                "retailPrice": {
+                    "amount": 2065,
+                    "currencyCode": "INR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=ftA0yk1Z92wC&rdid=book-ftA0yk1Z92wC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 2065000000,
+                            "currencyCode": "INR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 2065000000,
+                            "currencyCode": "INR"
+                        }
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=ftA0yk1Z92wC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "This edition of Learning Python puts you in the hands of two expert teachers, Mark Lutz and David Ascher, whose friendly, well-structured prose has guided many a programmer to proficiency with the language."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "LPOrDwAAQBAJ",
+            "etag": "HxuCRv1aceQ",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/LPOrDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Programming With Python",
+                "subtitle": "The Comprehensive Guide to Mastering Python Programming for Beginners",
+                "authors": [
+                    "Vaibhav Gondaliya"
+                ],
+                "publisher": "Vaibhav Gondaliya",
+                "publishedDate": "2019-08-30",
+                "description": "About Book Are you looking to master the Python programming language? Look no further than 'Programming with Python'! This comprehensive guide covers everything from installing the Python software on your computer to advanced data file handling techniques. With step-by-step instructions and helpful visual aids, this book is the perfect resource for beginners and experienced programmers alike. Along with detailed explanations of every topic, the book also includes numerous solved programs and unsolved exercises to help reinforce your understanding. Whether you're starting from scratch or looking to expand your skills in database handling, 'Programming with Python' is the ultimate resource for anyone looking to become a Python expert.",
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 321,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "0.4.3.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=LPOrDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=LPOrDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.co.in/books?id=LPOrDwAAQBAJ&printsec=frontcover&dq=python&hl=&cd=10&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=LPOrDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=LPOrDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "IN",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 295,
+                    "currencyCode": "INR"
+                },
+                "retailPrice": {
+                    "amount": 206.5,
+                    "currencyCode": "INR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=LPOrDwAAQBAJ&rdid=book-LPOrDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 295000000,
+                            "currencyCode": "INR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 206500000,
+                            "currencyCode": "INR"
+                        }
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "IN",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.co.in/books/download/Programming_With_Python-sample-pdf.acsm?id=LPOrDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=LPOrDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "In this book, you&#39;ll learn: - How to set up your Python development environment - Python syntax and basic concepts - Data types, variables, and operators - Conditional statements and loops - File input/output and data processing - Functions ..."
+            }
+        }
+    ]
+}
