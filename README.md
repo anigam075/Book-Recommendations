@@ -24,6 +24,10 @@ To get started with BookPro, follow these steps:
 4. Start the development server and access BookPro through your web browser.
 5. Register for an account or log in with existing credentials to begin exploring and recommending books.
 
+## Documentation
+
+For detailed documentation on setting up the project, API endpoints, usage examples, and external dependencies, please refer to the [Project Documentation][(link_to_documentation)](https://github.com/anigam075/Book-Recommendations/blob/main/Project%20Documentation.docx).
+
 ## Technologies Used
 
 - **Django**: Python-based web framework for building the backend of the application.
