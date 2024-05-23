@@ -26,7 +26,7 @@ To get started with BookPro, follow these steps:
 
 ## Documentation
 
-For detailed documentation on setting up the project, API endpoints, usage examples, and external dependencies, please refer to the [Project Documentation][(link_to_documentation)](https://github.com/anigam075/Book-Recommendations/blob/main/Project%20Documentation.docx).
+For detailed documentation on setting up the project, API endpoints, usage examples, and external dependencies, please refer to the Project Documentation[(link_to_documentation)](https://github.com/anigam075/Book-Recommendations/blob/main/Project%20Documentation.docx).
 
 ## Technologies Used
 
