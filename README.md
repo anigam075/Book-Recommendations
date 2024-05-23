@@ -40,7 +40,3 @@ For detailed documentation on setting up the project, API endpoints, usage examp
 ## Contributing
 
 Contributions to BookPro are welcome! Whether you want to report a bug, suggest a feature, or contribute code improvements, please feel free to submit a pull request or open an issue on GitHub.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code for your own purposes.
