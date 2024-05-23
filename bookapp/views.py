@@ -111,7 +111,7 @@ def add_to_recommendations(request):
 def view_recommendations(request):
     if request.user.is_authenticated:
         recommendations = Recommendation.objects.filter(user=request.user)
-        print(recommendations)
+        # print(recommendations)
         return render(request, 'my_recommendations.html', {'recommendations': recommendations})
     else:
         return redirect('login')
