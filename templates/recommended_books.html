@@ -12,7 +12,18 @@
             background-color: #333;
             color: #fff;
             padding: 10px;
-            text-align: right;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .welcome {
+            margin: 0;
+        }
+        .header .project-name {
+            /* margin-right: 150px; */
+            text-align: center;
+            font-size: 55px;
+            font-weight: bold;
         }
         .header a {
             color: #fff;
@@ -96,7 +107,6 @@
             cursor: pointer;
             border-radius: 10px;
         }
-
         .recommend-button:hover {
             background-color: #333333; 
         }
@@ -104,10 +114,13 @@
 </head>
 <body>
     <div class="header">
-        <p>Welcome, <strong>{{ user.first_name }} {{ user.last_name }}</strong></p>
-        <a href="{% url 'book_recommendation' %}">Home</a>
-        <a href="{% url 'view_recommendations' %}">My Recommendations</a>
-        <a href="{% url 'logout' %}">Logout</a>
+        <p class="welcome">Welcome, <strong>{{ user.first_name }} {{ user.last_name }}</strong></p>
+        <div class="project-name">BookPro</div>
+        <div class="nav-links">
+            <a href="{% url 'book_recommendation' %}">Home</a>
+            <a href="{% url 'view_recommendations' %}">My Recommendations</a>
+            <a href="{% url 'logout' %}">Logout</a>
+        </div>
     </div>
     <div class="container">
         <h2>Recommended Books</h2>
@@ -120,12 +133,10 @@
                     <option value="{{ genre }}" {% if request.GET.category == genre %}selected{% endif %}>{{ genre }}</option>
                     {% endfor %}
                 </select>
-
                 <select name="sort_by" id="sort-by">
                     <option value="rating" {% if request.GET.sort_by == "rating" %}selected{% endif %}>Rating</option>
                     <option value="publication_date" {% if request.GET.sort_by == "publication_date" %}selected{% endif %}>Publication Date</option>
                 </select>
-
                 <input type="submit" value="Apply">
             </form>
         </div>
@@ -156,7 +167,7 @@
                                 <li>No comments yet.</li>
                             {% endfor %}
                         </ul>
-                    </div>
+                    </di
                     <form method="post" action="{% url 'add_comment' recommendation.id %}">
                         {% csrf_token %}
                         <textarea name="text" placeholder="Add a comment"></textarea><br>

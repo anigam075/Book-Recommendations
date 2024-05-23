@@ -12,7 +12,17 @@
             background-color: #333;
             color: #fff;
             padding: 10px;
-            text-align: right;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .welcome {
+            margin: 0;
+        }
+        .header .project-name {
+            margin-left: 150px;
+            font-size: 55px;
+            font-weight: bold;
         }
         .header a {
             color: #fff;
@@ -43,10 +53,13 @@
 </head>
 <body>
     <div class="header">
-        <p>Welcome, <strong>{{ user.first_name }} {{ user.last_name }}</strong></p>
-        <a href="{% url 'book_recommendation' %}">Home</a>
-        <a href="{% url 'recommended_books' %}">Recommended Books</a>
-        <a href="{% url 'logout' %}">Logout</a>
+        <p class="welcome">Welcome, <strong>{{ user.first_name }} {{ user.last_name }}</strong></p>
+        <div class="project-name">BookPro</div>
+        <div class="nav-links">
+            <a href="{% url 'book_recommendation' %}">Home</a>
+            <a href="{% url 'recommended_books' %}">Recommended Books</a>
+            <a href="{% url 'logout' %}">Logout</a>
+        </div>
     </div>
     <div class="container">
         <h2>My Recommendations</h2>
